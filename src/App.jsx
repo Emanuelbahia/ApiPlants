@@ -7,7 +7,7 @@ import Register from "./pages/register/Register";
 import Home from "./components/home/Home";
 import BodyHome from "./components/body home/BodyHome";
 import Categories from "./components/categories/Categories";
-import OnePlant from "./components/one plant/OnePlant";
+
 
 function App() {
   
@@ -23,7 +23,6 @@ function App() {
             <Route path="register" element= { <Register/> } />
             <Route path="login" element= { <Login/> } />
             <Route path="categories" element= { <Categories/> } />
-            <Route path="categories/oneplant" element= { <OnePlant/> } />
          </Route>
       </Routes>
     </div>
