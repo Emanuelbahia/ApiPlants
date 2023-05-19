@@ -11,3 +11,4 @@ npm install react-bootstrap bootstrap
 npm i formik
 
 npm i yup
+npm i react-wavify

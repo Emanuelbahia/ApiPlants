@@ -1,5 +1,4 @@
 import { Outlet } from "react-router-dom";
-import Header from "../header/Header";
 import Footer from "../footer/Footer"
 import "./home.css"
 
@@ -8,9 +7,8 @@ import "./home.css"
 function Home() {
     return (
         <div className="container-home">
-           <Header/>
            <Outlet/>
-           <Footer/>
+           <Footer/> 
         </div>
       );
 }

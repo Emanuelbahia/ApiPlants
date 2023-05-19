@@ -1,39 +1,44 @@
-import { Link } from "react-router-dom";
-import "./header.css"
 import { RiPlantFill, RiMenuLine } from "react-icons/ri";
 import Dropdown from 'react-bootstrap/Dropdown';
+import { Link } from "react-router-dom";
+import "./header.css"
+
 
 function Header() {
 
     return (
-        <>
-          <div className="container-header"> 
-            <div className="div1-header">
-              <Dropdown>
-                  <Dropdown.Toggle variant="success" id="dropdown-basic">
-                      <RiMenuLine style={{ color: "white"}} />
-                  </Dropdown.Toggle>
+      <div className="navbar-principal">
+        <Link to="/home" style={{ textDecoration: "none"}}>
+          <div className="icon-title-plant">
+            <RiPlantFill className="plant-principal"/>
+            <h3 className="h3-principal-plants">ApiPlants</h3>
+          </div>
+        </Link>
+        <Dropdown className="dropdown">
+          <Dropdown.Toggle variant="success" id="dropdown-basic">
+              <RiMenuLine style={{ color: "white"}} />
+          </Dropdown.Toggle>
 
-                  <Dropdown.Menu>
-                      <Dropdown.Item ><Link className="menu-link" to="categories">Categories </Link> </Dropdown.Item>
-                      <Dropdown.Item ><Link className="menu-link" to="register">Register </Link> </Dropdown.Item>
-                      <Dropdown.Item ><Link className="menu-link" to="login">Login </Link> </Dropdown.Item>
-                  </Dropdown.Menu>
-              </Dropdown>
-            </div> 
-            <div className="div2-header">  
-              <div className="div-icon-plant">
-                  <RiPlantFill className="icon-plant"/>
-              </div>  
-              <Link style={{textDecoration : "none"}} to=""> <h2 className="h2-home"> ApiPlants </h2> </Link>
-            </div>
-          </div>
-          <div className="div3-header"> 
-              <div className="navbar-link"><p className="p-link"><Link className="name-link" to="categories">Categories</Link></p></div> 
-              <div className="navbar-link"><p className="p-link"><Link className="name-link" to="Register">Register</Link></p></div>
-              <div className="navbar-link"><p className="p-link"><Link className="name-link" to="Login">Login</Link></p></div>
-          </div>
-        </>
+          <Dropdown.Menu>
+              <Dropdown.Item ><Link className="menu-link" to="body">styles </Link> </Dropdown.Item>
+              <Dropdown.Item ><Link className="menu-link" to="categories">Categories </Link> </Dropdown.Item>                  
+              <Dropdown.Item ><Link className="menu-link" to="register">Register </Link> </Dropdown.Item>
+              <Dropdown.Item ><Link className="menu-link" to="login">Login </Link> </Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
+        <Link to="/home/body" className="link-principal-cel">
+          <h4 className="h4-principal">Most demanded</h4>
+        </Link>
+        <Link to="/home/categories" className="link-principal-cel">
+          <h4 className="h4-principal">Categories</h4>
+        </Link>
+        <Link to="/home/register" className="link-principal-cel">
+          <h4 className="h4-principal">Register</h4>
+        </Link>
+        <Link to="/home/login" className="link-principal-cel">
+          <h4 className="h4-principal">Login</h4> 
+        </Link>
+      </div>
      );
 }
 

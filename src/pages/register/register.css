@@ -1,4 +1,5 @@
 .register-body{
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,20 +28,20 @@
     padding: 1vw 2vw 2vw 2vw;
     border-radius: 10px;
     width: 60vw;
-    margin: 15vw 0;
+    margin: 23vw 0;
     box-shadow: -5px 3px 8px 0px white;
 }
 .label-register{
     width: 100%;
     color: white;
-    margin: 2vw 0;
+    margin: 1vw 0;
     display: flex;
     justify-content: flex-start;
     
 }
 .field-register{
     width: 100%;
-    height: 2.5vh;
+    height: 3vh;
     display: flex;
     justify-content: center;
     padding-left: 5px;
@@ -49,13 +50,12 @@
     color:white;
 }
 .button-register{
-    width: 90%;
-    margin: 5vw 0 2vw 0;
+    margin: 4vw 0 1vw 0;
     background-color: rgb(7 76 46);
-    height: 4vh;
     border-radius: 5px;
     color: white;
     border: none;
+    padding: 1vh 2vh;
 }
 .p-error{
     margin: 0;
@@ -65,10 +65,10 @@
     width: 90%;
 }
 
-@media (min-width: 481px){ 
+@media (min-width: 768px){ 
 
     .form-register{
-        width: 50vw;
+        width: 45vw;
     }
 
     
@@ -86,7 +86,9 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin: 8vw 0;
+        margin: 15vw 0 8vw;
+        width: 55vw;
+        max-width: 750px;
     }
     .label-register{
         margin: 1vw 0;
@@ -95,7 +97,8 @@
         height: 3.5vh;
     }
     .button-register{
-        margin: 3vw 0 2vw 0;
+        margin-top: 3vw;
+        margin-bottom: 0;
         width: 45%;
     }
     .center-register{

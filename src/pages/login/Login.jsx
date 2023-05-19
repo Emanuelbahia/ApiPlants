@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "./login.css"
+import Header from "../../components/header/Header";
 
 function Login() {
 
@@ -24,7 +25,7 @@ function Login() {
     return ( 
         <div className="centerLogin">
             <div className="absoluteLogin">
-        
+            <Header/>
             <form className="form-login" onSubmit={ handleSubmit }>
                 <label className="label-login" htmlFor="" >Email</label>
                 <input className="input-login" type="text" name="" ref={ inputEmail } />

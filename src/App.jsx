@@ -6,7 +6,8 @@ import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
 import Home from "./components/home/Home";
 import BodyHome from "./components/body home/BodyHome";
-import Categories from "./components/categories/Categories";
+import OneCategory from "./components/one category/OneCategory";
+import Principal from "./components/principal/Principal";
 
 
 function App() {
@@ -19,10 +20,11 @@ function App() {
             <Route index element= { <Presentation/> } />     
          </Route> 
          <Route path="/home" element= { <Home/> } > 
-            <Route index element= { <BodyHome/> } /> 
+            <Route index element= { <Principal/> } /> 
+            <Route path="body" element= { <BodyHome/> } />
             <Route path="register" element= { <Register/> } />
             <Route path="login" element= { <Login/> } />
-            <Route path="categories" element= { <Categories/> } />
+            <Route path="categories/*" element= { <OneCategory/> } />
          </Route>
       </Routes>
     </div>

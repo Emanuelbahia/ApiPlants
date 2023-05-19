@@ -1,6 +1,7 @@
 import { Formik, Form, Field } from "formik"
 import "./register.css"
 import * as yup from "yup"
+import Header from "../../components/header/Header";
 
 function Register() {
     
@@ -36,7 +37,7 @@ function Register() {
   
           <div className="register-body">
                 
-             
+             <Header/>
               <Formik 
   
               initialValues={{

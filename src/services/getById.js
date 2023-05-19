@@ -9,6 +9,6 @@ export const getById = async (ID) => {
       "X-RapidAPI-Host": "house-plants2.p.rapidapi.com",
     },
   };
-  console.log(ID);
+
   return await ajax(options);
 };
