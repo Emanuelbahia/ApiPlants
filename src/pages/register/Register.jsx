@@ -89,10 +89,8 @@ function Register() {
                           <button className="button-register" type="submit">Register</button>
                       </div>
                     </Form>
-                  )}
-                 
-              </Formik>   
-              {/* <img className="img-aurora" src= { "https://ipparaguay.com.py/wp-content/uploads/2022/10/Islas-Maldivas-donde-queda.jpg" } /> */}   
+                  )}             
+              </Formik>      
         </div>
      );
 }

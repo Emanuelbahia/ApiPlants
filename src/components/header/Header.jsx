@@ -11,7 +11,7 @@ function Header() {
         <Link to="/home" style={{ textDecoration: "none"}}>
           <div className="icon-title-plant">
             <RiPlantFill className="plant-principal"/>
-            <h3 className="h3-principal-plants">ApiPlants</h3>
+            <h3 className="h3-principal-plants">Plants for the soul</h3>
           </div>
         </Link>
         <Dropdown className="dropdown">

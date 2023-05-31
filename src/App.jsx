@@ -1,7 +1,5 @@
-import Layout from "./pages/layout/Layout";
 import { Routes, Route } from "react-router-dom"
 import './App.css'
-import Presentation from "./components/presentation/Presentation";
 import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
 import Home from "./components/home/Home";
@@ -15,10 +13,7 @@ function App() {
  {/* poniendo el index, el primer componente q aparece en el layout es el home */}
   return (
     <div className="app-container" >
-      <Routes>
-         <Route path="/" element= { <Layout/> } >
-            <Route index element= { <Presentation/> } />     
-         </Route> 
+      <Routes> 
          <Route path="/home" element= { <Home/> } > 
             <Route index element= { <Principal/> } /> 
             <Route path="body" element= { <BodyHome/> } />
