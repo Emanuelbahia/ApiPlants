@@ -37,8 +37,11 @@
     color: black;
     text-decoration: none;
 }
-.link-h3{
+.link-h3, .link-h3-connect{
     display: none;
+}
+.h3-plant-body{
+    margin-bottom: 3vw;
 }
 
 
@@ -95,8 +98,11 @@
         justify-content: center;
         align-items: center;
     }
-    .link-body:hover {
-        color: rgb(1 46 32);
+    .link-body:hover{
+        color: grey;
+    }
+    .h3-body:hover {
+        color: rgb(6 38 28);
     }
     .div-name-img{
         width: 33vw;
@@ -116,5 +122,22 @@
     .div-h3{
         width: 100%
     }
-    
+    .h3-body-connect{
+        font-size: 5vw;
+        font-family: serif;
+    }
+    .h3-body-connect:hover {
+        color: rgb(6 38 28);
+    }
+    .link-h3-connect{
+        display: block;
+        width: 34vw;
+        max-width: 500px;
+        color:  rgb(0 92 64);
+        text-decoration: none;
+        text-align: center;
+    }
+    .h3-plant-body{
+        margin-bottom: 3vh;
+    }
   }

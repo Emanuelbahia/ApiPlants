@@ -4,12 +4,10 @@
     padding: 2vw 0;
     background: rgb(1 46 32);
 }
-
 .footer-terms{
     display: flex;
     justify-content: space-evenly;
 }
-
 .footer-copy{
     display: flex;
     align-items: center;
@@ -19,7 +17,6 @@
 .link-hover, .span-footer {
     font-size: 2vw;
 }
-
 .link-hover:hover{
     color: rgb(22, 124, 168);
 }
@@ -40,9 +37,7 @@
     }
     .span-footer{
         margin: 0 1vw;
-    }
-   
-    
+    }   
 }
 
   /*media queries pc*/

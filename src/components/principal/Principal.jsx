@@ -1,9 +1,15 @@
 import { Link } from "react-router-dom";
+import  screenSize  from "../../services/screenSize"
 import "./principal.css";
 import Header from "../header/Header";
+import Publicity from "./Publicity";
 
 
 export default function Principal() {
+
+  const { width } = screenSize();
+  console.log(width);
+
   return (
     <div className="container-principal">
         <Header/>
@@ -24,10 +30,12 @@ export default function Principal() {
                   <button className="button-principal">Some styles</button>
                 </Link>
               </div>
+              { width < 1024 ? <Publicity/> : "" }
             </div>
             <div className="div-right">
                 <img className="img-principal" src="https://indiagardening.b-cdn.net/wp-content/uploads/2020/05/Sitting-Arrangement-1.jpg" />  
             </div>  
+            { width > 1024 ? <Publicity/> : "" }
         </div>         
     </div>    
   )

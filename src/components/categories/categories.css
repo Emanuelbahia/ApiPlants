@@ -51,10 +51,10 @@
   @media (min-width: 1024px){  
 
     .label-category{
-        font-size: 2vw;
+        font-size: 1.6vw;
     }
     .select-category {
-        font-size: 1.5vw;
+        font-size: 1.2vw;
     }
     .container-div-plant{
         max-width: 1400px;

@@ -6,7 +6,7 @@ function SelectCategory(props) {
 
     //cuando elijo una planta me manda a la pagina donde me muestra la planta con todas sus caracteristicas.
     return ( 
-        <Link to= {`/home/categories/${props.id}`} style={{ textDecoration: "none", color: "black"}} >
+        <Link to= {`/categories/${props.id}`} style={{ textDecoration: "none", color: "black"}} >
             <div className="div-plant" >
                 <h4 className="h4-plant"> { props["Latin name"] } </h4> 
                 <img className="img-plant" src={ props.Img } alt={ props.id }  />                                                

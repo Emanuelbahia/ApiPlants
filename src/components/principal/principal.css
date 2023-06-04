@@ -6,7 +6,7 @@
 .div-left{
     width: 100%;
     background: linear-gradient(0deg, rgb(6 38 28) 25%, rgb(10 171 123) 181%);
-    box-shadow: 6px -1px 20px 5px;
+    box-shadow: 6px -1px 20px 5px rgb(6 38 28);
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -64,6 +64,31 @@
 .img-cel{
     width: 100%;
     margin-top: 18vw;
+}
+.container-all-publities{
+    width: 100vw;
+    padding: 0 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-publicity{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10vw;
+}
+.p-publicity{
+    color: #ffffffcf;
+    font-family: serif;
+    font-size: 4vw;
+    text-align: center;
+}
+.img-publicity{
+    width: 100%;
+    height: 70vw;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 
@@ -129,6 +154,27 @@
     .img-principal{
         display: block;
     }
-    
-    
+    .wraper-ledt-right{
+        flex-wrap: wrap;
+    }
+    .container-all-publities{
+        background-color: rgb(6 38 28);
+        display: flex;
+        flex-direction: row;
+        padding: 5vh;
+        justify-content: space-between;
+        box-shadow: 1px -8px 15px rgb(6 38 28);
+    }
+    .container-publicity {
+        width: 20vw;
+        height: 45vh;
+        margin: 0;
+        justify-content: flex-end;
+    }
+    .p-publicity{
+        font-size: 2.5vh;
+    }    
+    .img-publicity{
+        height: 35vh;
+    }
   }

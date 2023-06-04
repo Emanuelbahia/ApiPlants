@@ -8,7 +8,7 @@ function Header() {
 
     return (
       <div className="navbar-principal">
-        <Link to="/home" style={{ textDecoration: "none"}}>
+        <Link to="/" style={{ textDecoration: "none"}}>
           <div className="icon-title-plant">
             <RiPlantFill className="plant-principal"/>
             <h3 className="h3-principal-plants">Plants for the soul</h3>
@@ -26,16 +26,16 @@ function Header() {
               <Dropdown.Item ><Link className="menu-link" to="login">Login </Link> </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
-        <Link to="/home/body" className="link-principal-cel">
+        <Link to="/body" className="link-principal-cel">
           <h4 className="h4-principal">Most demanded</h4>
         </Link>
-        <Link to="/home/categories" className="link-principal-cel">
+        <Link to="/categories" className="link-principal-cel">
           <h4 className="h4-principal">Categories</h4>
         </Link>
-        <Link to="/home/register" className="link-principal-cel">
+        <Link to="/register" className="link-principal-cel">
           <h4 className="h4-principal">Register</h4>
         </Link>
-        <Link to="/home/login" className="link-principal-cel">
+        <Link to="/login" className="link-principal-cel">
           <h4 className="h4-principal">Login</h4> 
         </Link>
       </div>

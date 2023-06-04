@@ -6,6 +6,7 @@ import Home from "./components/home/Home";
 import BodyHome from "./components/body home/BodyHome";
 import OneCategory from "./components/one category/OneCategory";
 import Principal from "./components/principal/Principal";
+import NotFound from "./pages/not found/NotFound";
 
 
 function App() {
@@ -14,13 +15,14 @@ function App() {
   return (
     <div className="app-container" >
       <Routes> 
-         <Route path="/home" element= { <Home/> } > 
+         <Route path="/" element= { <Home/> } > 
             <Route index element= { <Principal/> } /> 
             <Route path="body" element= { <BodyHome/> } />
             <Route path="register" element= { <Register/> } />
             <Route path="login" element= { <Login/> } />
             <Route path="categories/*" element= { <OneCategory/> } />
          </Route>
+         <Route path='*' element= { <NotFound/> } />
       </Routes>
     </div>
   )
